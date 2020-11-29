@@ -1,0 +1,31 @@
+/* 
+    Created on : 28-nov-2020, 22:57:20
+    Author     : ites_
+*/
+
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.frm--card {
+    border-color: #0A2A60 !important; 
+    border-radius: 0.5rem;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    color: #0A2A60;
+}
+
+input:focus, input.form-control:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
