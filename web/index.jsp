@@ -10,35 +10,38 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Autentificacion JSP</title>
+        <!--CSS Only-->
+        <%@include file="./css/styles.jsp" %>
     </head>
     <body>
-        <header>
-            <div>
-                <h1 class="text-center">Login Form</h1>
-            </div>
+        <div class="container">
+            <div class="abs-center">
+                <form autocomplete="off" class="border p-4 frm--card">
+                    <h1 class="h2 text-center">Login Form</h1>
 
-            <form autocomplete="off">
-                <div>
-                    <div class="">
-                        <label class="sr-only" for="inpUsuario">Usuario</label>
+                    <br>
+                    <div class="form-group">
+                        <label class="sr-only" for="inpUsuario">Username</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
-                                <div class="input-group-text"></div>
+                                <div class="input-group-text"><img src="./img/icon-person.svg" alt="Person"></div>
                             </div>
-                            <input type="text" class="form-control form-control-sm" id="inpUsuario" placeholder="Usuario">
-                        </div>
-                        <label class="sr-only" for="inpUsuario">Contrase&ntilde;a</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text"></div>
-                            </div>
-                            <input type="text" class="form-control form-control-sm" id="inpClavve" placeholder="Contrase&ntilde;a">
+                            <input type="text" class="form-control" id="inpUsuario" placeholder="Username">
                         </div>
                     </div>
-                    
-                    <input type="submit" value="Sign in" name="submit" class="btn-success btn-sm btn-block">
-                </div>
-            </form>
-        </header>
+                    <div class="form-group">
+                        <label class="sr-only" for="inpUsuario">Password</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><img src="./img/icon-lock.svg" alt="Lock"></div>
+                            </div>
+                            <input type="password" class="form-control" id="inpClavve" placeholder="Password">
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Sign in" name="submit" class="btn btn-success btn-block">
+                </form>
+            </div>
+        </div>
     </body>
 </html>
